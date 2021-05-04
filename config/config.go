@@ -23,10 +23,10 @@ type config struct {
 var Config config
 
 func init() {
-	prodClientID := flag.String("production-client-id", "", "Production Client ID")
-	prodClientSecret := flag.String("production-client-secret", "", "Production Client Secret")
-	testClientID := flag.String("test-client-id", "", "Test Client ID")
-	testClientSecret := flag.String("test-client-secret", "", "Test Client Secret")
+	prodClientID := flag.String("production-client-id", "PwfsiztXNvfeiaAPU4zCozaXIn15pQMUW9omVdcG", "Production Client ID")
+	prodClientSecret := flag.String("production-client-secret", "wS2spkqBREEJety3kLJ6idxSRIOrg1gTl4jHnM7EHfk92PjGWDULQJeIbl65bq4oLvbsuDOI81oA1wvFvEGzmBu9fFHgiCvtZGkmAVU22kyi4LQM9CHTrh7kiiOJKi5f", "Production Client Secret")
+	testClientID := flag.String("test-client-id", "test_YoTUOtL9yPqtD6pKm1yekhgFgmBBKMZ39Mx", "Test Client ID")
+	testClientSecret := flag.String("test-client-secret", "test_bSr0i0DkYzZcoMTN4PRRrWHsbtS4V2JLOhTE7RbTM6403SlDbl3az2PGZjw4GpwQ7ahemvhIM3iPni5ZGxFKOlWcKypzelXZFslNwbnmMt2EdB56KVDb1gW56DW", "Test Client Secret")
 	flag.Parse()
 
 	if *prodClientID == "" {
